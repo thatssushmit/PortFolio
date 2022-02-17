@@ -662,3 +662,15 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+span{
+    color: crimson !important;
+    /* background: crimson; */
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    padding: none !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
