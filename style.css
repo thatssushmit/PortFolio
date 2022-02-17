@@ -170,6 +170,10 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     background-position: top;
     background-color: #bdb8b7;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 
 }
 .home .max-width{
