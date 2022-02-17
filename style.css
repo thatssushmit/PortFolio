@@ -627,6 +627,9 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
+    .home{
+        background-attachment: scroll;
+    }
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -641,6 +644,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
+    .home{
+        background-attachment: scroll;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
