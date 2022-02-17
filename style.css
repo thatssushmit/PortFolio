@@ -133,8 +133,8 @@ section .title::after{
 }
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
-    width: 42px;
+    height: 33px;
+    width: 38px;
     background: crimson;
     right: 30px;
     bottom: 10px;
@@ -677,14 +677,15 @@ footer span a:hover{
     }
 }
 
-span{
+
+#LinkedIn{
     color: crimson !important;
-    /* background: crimson; */
+    background: white;
     font-size: 18px !important;
     font-weight: 500 !important;
-    padding: none !important;
-    margin-top: 0 !important;
-    border-radius: 0 !important;
-    border: none !important;
+    border-radius: 0 ;
+    padding: 0;
+    border: none ;
     transition: all 0.3s ease;
+
 }
