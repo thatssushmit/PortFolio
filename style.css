@@ -170,7 +170,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     background-position: top;
     background-color: #bdb8b7;
-    -webkit-background-size: cover;
+    -webkit-background-size: 1920px 960px;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
