@@ -48,10 +48,12 @@ window.onload = function() {
         // Check if the dark-mode Media-Query matches
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
             setTheme('theme-dark');
-            document.getElementById('theme-icon').classList.add('moon')
+            document.getElementById('theme-icon').className = 'moon'
+
         } else {
             setTheme('theme-light');
-            document.getElementById('theme-icon').classList.add('sun')
+            document.getElementById('theme-icon').className = 'sun'
+
         }
       }
 
