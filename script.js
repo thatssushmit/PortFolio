@@ -51,7 +51,6 @@ function topFunction() {
 // }
 
 // a.addEventListener('click', e => {
-//     debugger
 //     e.currentTarget; // always returns "a" element
 //     e.target; // may return "a" or "span"
 // })
@@ -79,6 +78,25 @@ window.onload = function() {
         loop: true
     });
 
+    // Immediately invoked function to set the theme on initial load
+    if (window.matchMedia) {
+        // Check if the dark-mode Media-Query matches
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            console.log('dark')
+            setTheme('theme-dark');
+
+          // Dark
+        } else {
+            setTheme('theme-light');
+
+            console.log('light')
+          // Light
+        }
+      } else {
+        // Default (when Media-Queries are not supported)
+      }
+
+
 }
 
 
@@ -96,4 +114,25 @@ $(document).ready(function(){
 
 
 });
+
+
+ // function to set a given theme/color-scheme
+ function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+// function to toggle between light and dark theme
+document.getElementsByClassName('logo')[0].addEventListener('click',function(event){
+    if (localStorage.getItem('theme') === 'theme-dark' &&) {
+
+        setTheme('theme-light');
+        document.getElementById('slider').checked = false;
+    } else if(localStorage.getItem('theme') === 'theme-light') {
+        setTheme('theme-dark');
+    }
+
+
+})
+
 

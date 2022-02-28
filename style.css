@@ -173,6 +173,24 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
+.theme-switterBtn{
+    position: fixed;
+    height: 38px;
+    width: 38px;
+    background: crimson;
+    left: 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 69%;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.1s ease;
+}
+
 /* home section styling */
 .home{
     display: flex;
