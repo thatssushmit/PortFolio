@@ -16,8 +16,8 @@ html{
     scroll-behavior: smooth;
 }
 .theme-light {
-    --color-primary: rgba(235, 232, 235, 0.87);
-    --color-secondary: #bdb8b7;
+    --color-primary: #bdb8b7;
+    --color-secondary: rgba(235, 232, 235, 0.87);
     --color-accent: crimson;
     --font-color: #000000;
     --moon-color: #B5BCC6;
