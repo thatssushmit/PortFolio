@@ -84,10 +84,16 @@ window.onload = function() {
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
             console.log('dark')
             setTheme('theme-dark');
+            document.getElementById('sun').style.display = 'none';
+            document.getElementById('moon').style.display = 'block';
+
+
 
           // Dark
         } else {
             setTheme('theme-light');
+            document.getElementById('sun').style.display = 'block';
+            document.getElementById('moon').style.display = 'none';
 
             console.log('light')
           // Light
@@ -127,9 +133,12 @@ document.getElementsByClassName('logo')[0].addEventListener('click',function(eve
     if (localStorage.getItem('theme') === 'theme-dark') {
 
         setTheme('theme-light');
-        document.getElementById('slider').checked = false;
+        document.getElementById('sun').style.display = 'none';
+        document.getElementById('moon').style.display = 'block';
     } else if(localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark');
+        document.getElementById('sun').style.display = 'block';
+        document.getElementById('moon').style.display = 'none';
     }
 
 
