@@ -13,11 +13,9 @@ function scrollFunction() {
     }
     if (this.scrollY > 500) {
         scrollupbtn.classList.add("show")
-        // scrollupbtn.addClass("show")
 
     } else {
         scrollupbtn.classList.remove("show")
-        // scrollupbtn.style.display = "none";
     }
   }
   // When the user clicks on the button, scroll to the top of the document
@@ -25,39 +23,6 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
-// function showMenu(){
-//    let  menuSelectors = document.getElementById("menu")
-
-//     // document.getElementById("navbar").classList.T
-//     menuSelectors.classList.toggle("active")
-//     document.getElementById("menu-btn1").childNodes[1].classList.toggle("active")
-//     document.getElementById("navbar").classList.toggle("active")
-//     let itemMenu = menuSelectors.children
-//     for(let menus in itemMenu){
-//         let menu = itemMenu[menus].children.
-    
-
-//     }
-
-
-    
-
-    // console.log(menuButton)
-    // document.getElementsByClassName("navbar .menu").classList.toggle("active")
-    // document.getElementsByClassName(".menu-btn i").classList.toggle("active")
-
-// }
-
-// a.addEventListener('click', e => {
-//     e.currentTarget; // always returns "a" element
-//     e.target; // may return "a" or "span"
-// })
-
-
-
-
 
 
 stringsArrays = ["Programmer","Web-Designer","Freelancer","Web-Developer"]
@@ -82,36 +47,19 @@ window.onload = function() {
     if (window.matchMedia) {
         // Check if the dark-mode Media-Query matches
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-            console.log('dark')
             setTheme('theme-dark');
-            document.getElementById('theme-icon').addEventListener('on')
             document.getElementById('theme-icon').classList.add('moon')
-            // this.toggleTheme('moon')
-            // document.getElementById('sun').style.display = 'none';
-            // document.getElementById('moon').style.display = 'block';
-
-
-
-          // Dark
         } else {
             setTheme('theme-light');
             document.getElementById('theme-icon').classList.add('sun')
-
-
-            console.log('light')
-          // Light
         }
-      } else {
-        // Default (when Media-Queries are not supported)
       }
-
 
 }
 
 
 $(document).ready(function(){
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
     // toggle menu/navbar script
@@ -139,25 +87,10 @@ document.getElementsByClassName('theme')[0].addEventListener('click',function(ev
     console.log(themeButton)
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
-        // if(themeButton == 'moon sun'){
-        //     themeButton.classList.remove('moon')
-
-        // }
         document.getElementById('theme-icon').className = 'sun'
-        // document.getElementById('sun').style.display = 'none';
-        // document.getElementById('moon').style.display = 'block';
     } else if(localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark');
-        // if(themeButton.includes('moon sun')){
-        //     themeButton.classList.remove('moon')
-
-        // }
         document.getElementById('theme-icon').className = 'moon'
-
-        // document.getElementById('theme-icon').classList.add('moon')
-
-        // document.getElementById('sun').style.display = 'block';
-        // document.getElementById('moon').style.display = 'none';
     }
 
 

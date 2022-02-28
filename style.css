@@ -20,7 +20,6 @@ html{
     --color-secondary: rgba(235, 232, 235, 0.87);
     --color-accent: crimson;
     --font-color: #000000;
-    --moon-color: #B5BCC6;
     --sun-color:#FFDE00;
   }
 .theme-dark {
@@ -28,7 +27,6 @@ html{
     --color-secondary:#222;
     --color-accent: crimson;
   --font-color: #ffffff;
-  --moon-color: #B5BCC6;
   --sun-color:#FFDE00
 
 
@@ -797,8 +795,8 @@ html {
   height: 2rem;
   background: #0a0a0a;
   margin: 0 auto;
-  animation:moon 3s infinite linear forwards;
+  animation:moon 3s infinite linear;
   border-radius: 50%;
-  box-shadow: inset -2rem 0 whitesmoke;
+  box-shadow: inset -2rem 0 var(--font-color);
   transform: rotate(-10deg);
 }
