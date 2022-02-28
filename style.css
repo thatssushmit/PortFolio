@@ -50,6 +50,8 @@ section{
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
+    background-color:var(--color-secondary);
+    color: var(--font-color);
 }
 .about .about-content,
 .services .serv-content,
