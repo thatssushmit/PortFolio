@@ -79,8 +79,6 @@ window.onload = function() {
         loop: true
     });
 
- 
-
 }
 
 
@@ -98,3 +96,10 @@ $(document).ready(function(){
 
 
 });
+
+function sendEmail(message){
+    var email = message.emailId;
+    var subject = message.subject;
+    var emailBody = 'Hi '+message.from;
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+}
