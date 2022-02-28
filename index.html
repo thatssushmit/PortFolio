@@ -12,16 +12,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 <body>
-    <div class="clouds"></div>
-
     <div class="scroll-up-btn" id="scroll-up-btn" onclick="topFunction()">
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar" id="navbar">
         <div class="max-width">
-            <div id="sun"class="sun"></div>
-            <div id="moon" class="moon"></div>
-            <div class="logo" onchange="toggleTheme()" id="slider"><a href="#">SUSH<span>MIT.
+            <div id="theme" class="theme" onchange="toggleTheme()">
+                <div id="sun"class="sun"></div>
+                <div id="moon" class="moon"></div>
+            </div>
+            <div>
+            </div>
+            <div class="logo" id="slider"><a href="#">SUSH<span>MIT.
             </span></a></div>
             <ul class="menu" id="menu">
                 <li><a href="#home" class="menu-btn" id="menu-btn">Home</a></li>

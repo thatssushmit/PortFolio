@@ -129,7 +129,7 @@ $(document).ready(function(){
 }
 
 // function to toggle between light and dark theme
-document.getElementsByClassName('logo')[0].addEventListener('click',function(event){
+document.getElementsByClassName('theme')[0].addEventListener('click',function(event){
     if (localStorage.getItem('theme') === 'theme-dark') {
 
         setTheme('theme-light');
