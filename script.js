@@ -84,16 +84,19 @@ window.onload = function() {
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
             console.log('dark')
             setTheme('theme-dark');
-            document.getElementById('sun').style.display = 'none';
-            document.getElementById('moon').style.display = 'block';
+            document.getElementById('theme-icon').addEventListener('on')
+            document.getElementById('theme-icon').classList.add('moon')
+            // this.toggleTheme('moon')
+            // document.getElementById('sun').style.display = 'none';
+            // document.getElementById('moon').style.display = 'block';
 
 
 
           // Dark
         } else {
             setTheme('theme-light');
-            document.getElementById('sun').style.display = 'block';
-            document.getElementById('moon').style.display = 'none';
+            document.getElementById('theme-icon').classList.add('sun')
+
 
             console.log('light')
           // Light
@@ -128,17 +131,33 @@ $(document).ready(function(){
     document.documentElement.className = themeName;
 }
 
+
+
 // function to toggle between light and dark theme
 document.getElementsByClassName('theme')[0].addEventListener('click',function(event){
+    let themeButton = document.getElementById('theme-icon').className
+    console.log(themeButton)
     if (localStorage.getItem('theme') === 'theme-dark') {
-
         setTheme('theme-light');
-        document.getElementById('sun').style.display = 'none';
-        document.getElementById('moon').style.display = 'block';
+        // if(themeButton == 'moon sun'){
+        //     themeButton.classList.remove('moon')
+
+        // }
+        document.getElementById('theme-icon').className = 'sun'
+        // document.getElementById('sun').style.display = 'none';
+        // document.getElementById('moon').style.display = 'block';
     } else if(localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark');
-        document.getElementById('sun').style.display = 'block';
-        document.getElementById('moon').style.display = 'none';
+        // if(themeButton.includes('moon sun')){
+        //     themeButton.classList.remove('moon')
+
+        // }
+        document.getElementById('theme-icon').className = 'moon'
+
+        // document.getElementById('theme-icon').classList.add('moon')
+
+        // document.getElementById('sun').style.display = 'block';
+        // document.getElementById('moon').style.display = 'none';
     }
 
 
